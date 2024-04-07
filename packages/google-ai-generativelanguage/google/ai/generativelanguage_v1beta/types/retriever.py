@@ -92,6 +92,33 @@ class Document(proto.Message):
             contain up to 40 characters that are lowercase alphanumeric
             or dashes (-). The ID cannot start or end with a dash. If
             the name is empty on create, a unique name will be derived
+            automatically.
+
+        text (str):
+            Required. The document text. If the type is ``HTML``, the
+            text must be in full HTML format.
+        language (str):
+            Optional. The language of the document (if not specified,
+            the language is automatically detected). Both ISO and
+            BCP-47 language codes are accepted.
+            [More info](https://cloud.google.com/natural-language/docs/languages)
+
+        mime_type (str):
+            Optional. The document type. If not specified, the type is
+            automatically detected. Currently, only HTML, PDF, and
+            plain text are supported. For a list of supported types, see
+            [Document.Type][google.cloud.aiplatform.v1beta.Document.Type].
+        knowledge_types (List[str]):
+            Optional. Knowledge types to extract from the document. All
+            specified knowledge types must be applicable to the specified
+            document level (i.e., text, table, figure, etc.).
+        content (google.rpc.status_pb2.Status):
+            Output only. API-generated billing resource name. If set,
+            specifies the full resource name of a billing account to
+            which the API should direct billing charges. The format will
+            be ``billingAccounts/{billing_account_id}``. If not set,
+            billing charges will be directed to the default billing
+            account for the project in which the API is invoked.
             from ``display_name`` along with a 12 character random
             suffix. Example:
             ``corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c``
