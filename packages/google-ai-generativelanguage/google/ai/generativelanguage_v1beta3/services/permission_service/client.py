@@ -539,17 +539,19 @@ class PermissionServiceClient(metaclass=PermissionServiceClientMeta):
                 permissions that the role contains.
 
                 There are three concentric roles. Each
-                role is a superset of the previous
-                role's permitted operations:
+```python
+            role is a superset of the previous
+            role's permitted operations:
 
-                 - reader can use the resource (e.g.
-                  tuned model) for inference
-                 - writer has reader's permissions and
-                  additionally can edit and share
-                 - owner has writer's permissions and
-                  additionally can delete
+             - `reader` can use the resource (e.g.
+              tuned model) for inference
+             - `writer` has reader's permissions and
+              additionally can edit and share
+             - `owner` has writer's permissions and
+              additionally can delete
 
-        """
+    """
+```
         # Create or coerce a protobuf request object.
         # Quick check: If we got a request object, we should *not* have
         # gotten any keyword arguments that map to the request.
