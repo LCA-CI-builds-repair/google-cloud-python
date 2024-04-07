@@ -92,6 +92,11 @@ class Document(proto.Message):
             contain up to 40 characters that are lowercase alphanumeric
             or dashes (-). The ID cannot start or end with a dash. If
             the name is empty on create, a unique name will be derived
+            from the ``parent`` resource. Example:
+            projects/my-project/locations/us-central1/documents/my-document
+
+
+    """
             from ``display_name`` along with a 12 character random
             suffix. Example:
             ``corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c``
