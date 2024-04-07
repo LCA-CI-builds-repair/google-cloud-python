@@ -87,7 +87,7 @@ class Document(proto.Message):
 
     Attributes:
         name (str):
-            Immutable. Identifier. The ``Document`` resource name. The
+            Immutable. Identifier. The `Document` resource name. The
             ID (name excluding the "corpora/*/documents/" prefix) can
             contain up to 40 characters that are lowercase alphanumeric
             or dashes (-). The ID cannot start or end with a dash. If
