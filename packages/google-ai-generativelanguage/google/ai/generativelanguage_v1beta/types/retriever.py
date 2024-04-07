@@ -85,13 +85,15 @@ class Document(proto.Message):
     r"""A ``Document`` is a collection of ``Chunk``\ s. A ``Corpus`` can
     have a maximum of 10,000 ``Document``\ s.
 
-    Attributes:
-        name (str):
-            Immutable. Identifier. The ``Document`` resource name. The
-            ID (name excluding the "corpora/*/documents/" prefix) can
-            contain up to 40 characters that are lowercase alphanumeric
-            or dashes (-). The ID cannot start or end with a dash. If
-            the name is empty on create, a unique name will be derived
+Attributes:
+----------
+
+name (str):
+Immutable. Identifier. The ``Document`` resource name. The
+ID (name excluding the "corpora/*/documents/" prefix) can
+contain up to 40 characters that are lowercase alphanumeric
+or dashes (-). The ID cannot start or end with a dash. If
+the name is empty on create, a unique name will be derived.
             from ``display_name`` along with a 12 character random
             suffix. Example:
             ``corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c``
