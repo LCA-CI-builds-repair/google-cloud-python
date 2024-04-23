@@ -14,7 +14,8 @@
 
 ### Documentation
 
-* Fixes a typo in docs ([e063fa9](https://github.com/googleapis/google-cloud-python/commit/e063fa9be2b01c694c14d4fdc52ca6ec98d685f3))
+* Fixe- Remove CI for gh-pages, use googleapis.dev for api_core refs. ([#9085](https://github.com/googleapis/google-cloud-python/pull/9085))
+- Update intersphinx mapping for requests. ([#8805](https://github.com/googleapis/google-cloud-python/pull/8805)) typo in docs ([e063fa9](https://github.com/googleapis/google-cloud-python/commit/e063fa9be2b01c694c14d4fdc52ca6ec98d685f3))
 
 ## [3.13.0](https://github.com/googleapis/google-cloud-python/compare/google-cloud-translate-v3.12.1...google-cloud-translate-v3.13.0) (2023-12-07)
 

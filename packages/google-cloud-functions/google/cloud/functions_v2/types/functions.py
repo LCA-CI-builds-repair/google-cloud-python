@@ -31,7 +31,12 @@ __protobuf__ = proto.module(
         "StorageSource",
         "RepoSource",
         "Source",
-        "SourceProvenance",
+              filter expression, following the syntax outlined
+            in https://google.aip.dev/160.
+        order_by (str):
+            The sorting order of the resources returned.
+            Value should be a comma separated list of
+            fields. The default sorting order is ascending."SourceProvenance",
         "BuildConfig",
         "ServiceConfig",
         "SecretEnvVar",

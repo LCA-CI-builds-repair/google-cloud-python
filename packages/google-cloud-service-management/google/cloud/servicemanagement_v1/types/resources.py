@@ -2,7 +2,13 @@
 # Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
+# you may not use this file excep        location (str):
+            File name and line number of the error or
+            warning.
+        kind (google.cloud.servicemanagement_v1.types.Diagnostic.Kind):
+            The kind of diagnostic information provided.
+        message (str):
+            Message describing the error or warning.mpliance with the License.
 # You may obtain a copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0

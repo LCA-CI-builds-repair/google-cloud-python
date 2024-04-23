@@ -64,7 +64,12 @@ __protobuf__ = proto.module(
 )
 
 
-class TranslateTextGlossaryConfig(proto.Message):
+class Transl            documents so far. Documents without clear page
+            definition (such as XLSX) are not counted.
+        translated_pages (int):
+            Number of successfully translated pages in
+            all documents so far. Documents without clear
+            page definition (such as XLSX) are not counted.tGlossaryConfig(proto.Message):
     r"""Configures which glossary is used for a specific target
     language and defines options for applying that glossary.
 

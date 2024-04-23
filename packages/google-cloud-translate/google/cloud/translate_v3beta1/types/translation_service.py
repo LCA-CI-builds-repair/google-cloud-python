@@ -60,10 +60,12 @@ __protobuf__ = proto.module(
         "BatchDocumentOutputConfig",
         "BatchTranslateDocumentResponse",
         "BatchTranslateDocumentMetadata",
-    },
-)
-
-
+                documents so far. Documents without clear page
+            definition (such as XLSX) are not counted.
+        translated_pages (int):
+            Number of successfully translated pages in
+            all documents so far. Documents without clear
+            page definition (such as XLSX) are not counted.
 class TranslateTextGlossaryConfig(proto.Message):
     r"""Configures which glossary should be used for a specific
     target language, and defines options for applying that glossary.
