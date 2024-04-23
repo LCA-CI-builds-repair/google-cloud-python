@@ -1,8 +1,23 @@
 # -*- coding: utf-8 -*-
 # Copyright 2023 Google LLC
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
+# Licensed under the Apache License, Version 2.0 (the     subtype of the media if the ``inline_data`` field is filled with raw
+    bytes.
+
+    This message has `oneof`_ fields (mutually exclusive fields).
+    For each oneof, at most one member field can be set at the same time.
+    Setting any member of the oneof automatically clears all other
+    members.
+
+    .. _oneof: https://proto-plus-python.readthedocs.io/en/stable/fields.html#oneofs-mutually-exclusive-fields
+
+    Attributes:
+        text (str):
+            Inline text.
+            This field is a member of `oneof`_ ``data``.
+
+        inline_data (google.ai.generativelanguage_v1beta.types.Blob):
+            Inline media bytes. may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
