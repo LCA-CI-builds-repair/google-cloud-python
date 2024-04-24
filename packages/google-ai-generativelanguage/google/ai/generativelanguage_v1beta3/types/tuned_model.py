@@ -7,7 +7,28 @@
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
+# Unless requ    """
+    Represents a tuned model with specified parameters.
+    """
+
+    epoch_count: int = proto.Field(
+        proto.INT32,
+        number=14,
+        optional=True,
+        default=10,
+    )
+    batch_size: int = proto.Field(
+        proto.INT32,
+        number=15,
+        optional=True,
+        default=32,
+    )
+    learning_rate: float = proto.Field(
+        proto.FLOAT,
+        number=16,
+        optional=True,
+        default=0.001,
+    )e law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and

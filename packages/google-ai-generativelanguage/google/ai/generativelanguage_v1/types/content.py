@@ -1,7 +1,30 @@
 # -*- coding: utf-8 -*-
 # Copyright 2023 Google LLC
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
+# Licens    r"""A datatype representing media that is part of a multi-part ``Content``
+    message.
+
+    A ``Part`` consists of data with an associated datatype. It can only contain one of the accepted types in
+    ``Part.data``.
+
+    A ``Part`` must have a fixed IANA MIME type identifying the type and
+    subtype of the media if the ``inline_data`` field is filled with raw
+    bytes.
+
+    This message has `oneof`_ fields (mutually exclusive fields).
+    For each oneof, at most one member field can be set at the same time.
+    Setting any member of the oneof automatically clears all other
+    members.
+
+    .. _oneof: https://proto-plus-python.readthedocs.io/en/stable/fields.html#oneofs-mutually-exclusive-fields
+
+    Attributes:
+        text (str):
+            Represents inline text.
+
+            This field is a member of `oneof`_ ``data``.
+        inline_data (google.ai.generativelanguage_v1.types.Blob):
+            Represents inline media bytes.se, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #

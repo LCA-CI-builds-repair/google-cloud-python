@@ -1,6 +1,29 @@
 # -*- coding: utf-8 -*-
-# Copyright 2023 Google LLC
-#
+# # This snippet has been automatically generated and should be regarded as a
+# code template only.
+# It will require modifications to work:
+# - It may require correct/in-range values for request initialization.
+# - It may require specifying regional endpoints when creating the service
+#   client as shown in:
+#   https://googleapis.dev/python/google-api-core/latest/client_options.html
+from google.cloud import storageinsights_v1
+
+def sample_list_report_configs():
+    # Create a client
+    client = storageinsights_v1.StorageInsightsClient()
+
+    # Initialize request argument(s)
+    request = storageinsights_v1.ListReportConfigsRequest(
+        parent="parent_value",  # Replace "parent_value" with the actual parent value
+
+    # Make the request
+    page_result = client.list_report_configs(request=request)
+
+    # Handle the response
+    for response in page_result:
+        print(response)
+
+# [END storageinsights_v1_generated_StorageInsights_ListReportConfigs_sync]
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at

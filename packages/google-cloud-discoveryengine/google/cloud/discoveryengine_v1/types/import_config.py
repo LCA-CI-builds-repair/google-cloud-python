@@ -8,7 +8,17 @@
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
+# distributed under the License is distributed on an "    Attributes:
+        inline_source (google.cloud.discoveryengine_v1.types.ImportDocumentsRequest.InlineSource):
+            Represents the Inline source for the input content for documents.
+
+            This field is a member of `oneof`_ ``source``.
+        gcs_source (google.cloud.discoveryengine_v1.types.GcsSource):
+            Represents the Cloud Storage location for the input content.
+
+            This field is a member of `oneof`_ ``source``.
+        bigquery_source (google.cloud.discoveryengine_v1.types.BigQuerySource):
+            Represents the BigQuery input source.
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.

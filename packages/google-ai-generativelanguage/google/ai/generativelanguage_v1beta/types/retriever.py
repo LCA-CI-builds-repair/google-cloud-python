@@ -1,4 +1,42 @@
-# -*- coding: utf-8 -*-
+# -*- class Retriever(proto.Message):
+    r"""A retriever contains the information needed to retrieve a
+    context.
+
+    Attributes:
+        name (str):
+            Required. The unique identifier of the
+            retriever.
+        display_name (str):
+            The human-readable name of the
+            retriever.
+        description (str):
+            The description of the retriever.
+        type_ (google.ai.generativelanguage_v1beta.types.Retriever.RetrieverType):
+            The type of the retriever.
+    """
+
+class CreateRetrieverRequest(proto.Message):
+    r"""Request message for CreateRetriever.
+
+    Attributes:
+        parent (str):
+            Required. The parent resource of the
+            retriever. Must be of the form
+            ``projects/*/locations/global/agents/*``.
+        retriever (google.ai.generativelanguage_v1beta.types.Retriever):
+            Required. The retriever to create.
+    """
+
+class UpdateRetrieverRequest(proto.Message):
+    r"""Request message for UpdateRetriever.
+
+    Attributes:
+        retriever (google.ai.generativelanguage_v1beta.types.Retriever):
+            Required. The retriever to update.
+        update_mask (google.protobuf.field_mask_pb2.FieldMask):
+            Required. The mask to control which fields
+            to update.
+    """oding: utf-8 -*-
 # Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");

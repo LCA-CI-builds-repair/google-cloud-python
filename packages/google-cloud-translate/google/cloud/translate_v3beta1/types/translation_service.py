@@ -60,11 +60,24 @@ __protobuf__ = proto.module(
         "BatchDocumentOutputConfig",
         "BatchTranslateDocumentResponse",
         "BatchTranslateDocumentMetadata",
-    },
-)
-
-
-class TranslateTextGlossaryConfig(proto.Message):
+        state (google.cloud.translate_v3beta1.types.BatchTranslateDocumentMetadata.State):
+            The state of the operation.
+        total_pages (int):
+            Total number of pages to translate in all documents processed so far. Pages in documents without clear page definition (e.g., XLSX) are not counted.
+        translated_pages (int):
+            Number of successfully translated pages in all documents processed so far. Pages in documents without clear page definition (e.g., XLSX) are not counted.
+        failed_pages (int):
+            Number of pages that failed to process in all documents processed so far. Pages in documents without clear page definition (e.g., XLSX) are not counted.
+        total_billable_pages (int):
+            Number of billable pages in documents with clear page definition (e.g., PDF, DOCX, PPTX) processed so far.
+        total_characters (int):
+            Total number of characters (Unicode codepoints) in all documents processed so far.
+        translated_characters (int):
+            Number of successfully translated characters (Unicode codepoints) in all documents processed so far.
+        failed_characters (int):
+            Number of characters that have failed to process (Unicode codepoints) in all documents processed so far.
+        total_billable_characters (int):
+            Number of billable characters (Unicode codepoints) in documents without clear page definition (e.g., XLSX) processed so far.ossaryConfig(proto.Message):
     r"""Configures which glossary should be used for a specific
     target language, and defines options for applying that glossary.
 

@@ -7,7 +7,41 @@
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
+# Unless required by applicable        proto.STRING,
+        number=1,
+    )
+    document: retriever.Document = proto.Field(
+        proto.MESSAGE,
+        number=2,
+        message=retriever.Document,
+    )
+
+
+class GetDocumentRequest(proto.Message):
+    r"""Request for getting information about a specific ``Document``.
+
+    Attributes:
+        name (str):
+            Required. The name of the ``Document`` to retrieve. Example:
+            ``corpora/my-corpus-123/documents/the-doc-abc``
+    """
+
+    name: str = proto.Field(
+        proto.STRING,
+        number=1,
+    )
+
+
+class UpdateDocumentRequest(proto.Message):
+    r"""Request to update a ``Document``.
+
+    Attributes:
+        document (google.ai.generativelanguage_v1beta.types.Document):
+            Required. The ``Document`` to update.
+        update_mask (google.protobuf.field_mask_pb2.FieldMask):
+            Required. The list of fields to update. Currently, this only
+            supports updating ``display_name`` and ``custom_metadata``.
+    """re
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
