@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-# Copyright 2023 Google LLC
+# Copyright 2023# Parameter Definition: Inline Document Content
+# Represents the inline document content as bytes
+# Usage: Provide the raw document content in bytes for processing or analysisoogle LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

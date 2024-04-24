@@ -1,4 +1,11 @@
-# -*- coding: utf-8 -*-
+# -*- # Retriever Class Definition
+# Define a class representing a retriever for generative language tasks
+# Include attributes and methods specific to retrieving information or data
+class Retriever:
+    def __init__(self, retriever_id, retriever_type):
+        self.retriever_id = retriever_id
+        self.retriever_type = retriever_type
+        # Add more attributes and methods as needed for retrieval operationsoding: utf-8 -*-
 # Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");

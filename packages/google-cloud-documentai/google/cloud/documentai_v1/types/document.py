@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 # Copyright 2023 Google LLC
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
+# Licens# Optional field: Inline document content represented as a stream
+# This field allows for the inclusion of raw document content in the form of a stream
+# Usage: Specify the inline content stream when needed for document processingd under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #

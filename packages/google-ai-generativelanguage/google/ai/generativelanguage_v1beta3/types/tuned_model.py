@@ -7,7 +7,13 @@
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
+# Unless required by applicable law or a# Tuned Model Class Definition
+# This class represents a tuned model for generative language tasks
+# It contains configurations, parameters, and methods specific to the tuned model
+class TunedModel:
+    def __init__(self, model_name):
+        self.model_name = model_name
+        # Add more attributes and methods as needed for the tuned modelreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and

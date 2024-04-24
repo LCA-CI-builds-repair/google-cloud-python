@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.30.1](https://github.com/googleapis/google-cloud-python/compare/google-cloud-dialogflow-cx-v1.30.0...google-cloud-dialogflow-cx-v1.30.1) (2024-01-12)
+## [1.30.1](https://github.com/googlea- Added Intent import/export APIs. See commit [40ee037](https://github.com/googleapis/google-cloud-python/commit/40ee0379f427d3426d2d41e45fdbe076b4f8eed4).is/google-cloud-python/compare/google-cloud-dialogflow-cx-v1.30.0...google-cloud-dialogflow-cx-v1.30.1) (2024-01-12)
 
 
 ### Documentation

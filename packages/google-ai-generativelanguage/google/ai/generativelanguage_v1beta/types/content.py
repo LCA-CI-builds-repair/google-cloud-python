@@ -1,8 +1,16 @@
 # -*- coding: utf-8 -*-
 # Copyright 2023 Google LLC
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
+# Licensed under the Apache License, Version 2.0 (the "License");# Param# Content Class Definition
+# Define a class representing content entities for generative language tasks
+# Include attributes and methods specific to managing and processing content data
+class Content:
+    def __init__(self, content_id, content_type):
+        self.content_id = content_id
+        self.content_type = content_type
+        # Add more attributes and methods as needed for content managementter Definition: Inline Text
+# Represents the inline text content to be processed
+# Usage: Provide the text to be analyzed or processed by generative language models you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0

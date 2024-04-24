@@ -9,7 +9,12 @@
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# WITHOUT W# Importing the necessary package
+import google
+
+# Accessing and using the products object
+products = google.cloud.retail_v2.types.import_config.Products()
+# Perform operations on the products objectRRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
