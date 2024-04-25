@@ -291,13 +291,12 @@ class Inventory(proto.Message):
                 information about Windows Update.
 
                 This field is a member of `oneof`_ ``details``.
-            qfe_package (google.cloud.osconfig_v1alpha.types.Inventory.WindowsQuickFixEngineeringPackage):
-                Details of a Windows Quick Fix engineering
-                package. See
-                https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-quickfixengineering
-                for info in Windows Quick Fix Engineering.
-
-                This field is a member of `oneof`_ ``details``.
+            qfe_package = proto.Field(
+                proto.MESSAGE,
+                number=2,
+                oneof='details',
+                message='Inventory.WindowsQuickFixEngineeringPackage',
+            )
             cos_package (google.cloud.osconfig_v1alpha.types.Inventory.VersionedPackage):
                 Details of a COS package.
 

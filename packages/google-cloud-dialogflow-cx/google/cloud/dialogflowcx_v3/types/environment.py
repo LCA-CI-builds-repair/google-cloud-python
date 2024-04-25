@@ -431,7 +431,7 @@ class ContinuousTestResult(proto.Message):
         PASSED = 1
         FAILED = 2
 
-    name: str = proto.Field(
+    name: str = proto.Field()
         proto.STRING,
         number=1,
     )
