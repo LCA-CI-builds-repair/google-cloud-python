@@ -239,7 +239,7 @@ def system(session):
     system_test_exists = os.path.exists(system_test_path)
     system_test_folder_exists = os.path.exists(system_test_folder_path)
     # Sanity check: only run tests if found.
-    if not system_test_exists and not system_test_folder_exists:
+    if not system_test_folder_exists:
         session.skip("System tests were not found")
 
     install_systemtest_dependencies(session, "-c", constraints_path)
