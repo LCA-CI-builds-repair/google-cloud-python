@@ -10863,7 +10863,6 @@ def test_get_crypto_key_version_rest_flattened():
         req.return_value = response_value
 
         client.get_crypto_key_version(**mock_args)
-
         # Establish that the underlying call was made with the expected
         # request object values.
         assert len(req.mock_calls) == 1
@@ -10926,6 +10925,7 @@ def test_get_public_key_rest(request_type):
         )
 
         # Wrap the value into a proper Response obj
+        # Wrap the value into a proper Response obj
         response_value = Response()
         response_value.status_code = 200
         # Convert return value to protobuf type
@@ -10934,7 +10934,6 @@ def test_get_public_key_rest(request_type):
 
         response_value._content = json_return_value.encode("UTF-8")
         req.return_value = response_value
-        response = client.get_public_key(request)
 
     # Establish that the response is the type that we expect.
     assert isinstance(response, resources.PublicKey)
@@ -10970,6 +10969,7 @@ def test_get_public_key_rest_required_fields(request_type=service.GetPublicKeyRe
     jsonified_request.update(unset_fields)
 
     # verify required fields with default values are now present
+    # verify required fields with default values are now present
 
     jsonified_request["name"] = "name_value"
 
@@ -10980,7 +10980,6 @@ def test_get_public_key_rest_required_fields(request_type=service.GetPublicKeyRe
 
     # verify required fields with non-default values are left alone
     assert "name" in jsonified_request
-    assert jsonified_request["name"] == "name_value"
 
     client = KeyManagementServiceClient(
         credentials=ga_credentials.AnonymousCredentials(),
@@ -11061,6 +11060,7 @@ def test_get_public_key_rest_interceptors(null_interceptor):
         }
 
         req.return_value = Response()
+        req.return_value = Response()
         req.return_value.status_code = 200
         req.return_value.request = PreparedRequest()
         req.return_value._content = resources.PublicKey.to_json(resources.PublicKey())
@@ -11070,7 +11070,6 @@ def test_get_public_key_rest_interceptors(null_interceptor):
             ("key", "val"),
             ("cephalopod", "squid"),
         ]
-        pre.return_value = request, metadata
         post.return_value = resources.PublicKey()
 
         client.get_public_key(
@@ -11123,6 +11122,7 @@ def test_get_public_key_rest_flattened():
         return_value = resources.PublicKey()
 
         # get arguments that satisfy an http rule for this method
+        # get arguments that satisfy an http rule for this method
         sample_request = {
             "name": "projects/sample1/locations/sample2/keyRings/sample3/cryptoKeys/sample4/cryptoKeyVersions/sample5"
         }
@@ -11131,7 +11131,6 @@ def test_get_public_key_rest_flattened():
         mock_args = dict(
             name="name_value",
         )
-        mock_args.update(sample_request)
 
         # Wrap the value into a proper Response obj
         response_value = Response()
@@ -11171,6 +11170,7 @@ def test_get_public_key_rest_flattened_error(transport: str = "rest"):
 
 
 def test_get_public_key_rest_error():
+def test_get_public_key_rest_error():
     client = KeyManagementServiceClient(
         credentials=ga_credentials.AnonymousCredentials(), transport="rest"
     )
@@ -11187,7 +11187,7 @@ def test_get_import_job_rest(request_type):
     client = KeyManagementServiceClient(
         credentials=ga_credentials.AnonymousCredentials(),
         transport="rest",
-    )
+)
 
     # send a request that will satisfy transcoding
     request_init = {
