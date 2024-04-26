@@ -11165,10 +11165,12 @@ def test_get_public_key_rest_flattened_error(transport: str = "rest"):
     # fields is an error.
     with pytest.raises(ValueError):
         client.get_public_key(
-            service.GetPublicKeyRequest(),
             name="name_value",
         )
 
+
+def test_get_public_key_rest_error():
+import pytest
 
 def test_get_public_key_rest_error():
     client = KeyManagementServiceClient(
@@ -11187,7 +11189,7 @@ def test_get_import_job_rest(request_type):
     client = KeyManagementServiceClient(
         credentials=ga_credentials.AnonymousCredentials(),
         transport="rest",
-    )
+)
 
     # send a request that will satisfy transcoding
     request_init = {

@@ -115,6 +115,7 @@ class Part(proto.Message):
     members.
 
     .. _oneof: https://proto-plus-python.readthedocs.io/en/stable/fields.html#oneofs-mutually-exclusive-fields
+from google.ai.generativelanguage_v1beta.types.blob import Blob
 
     Attributes:
         text (str):
@@ -124,6 +125,7 @@ class Part(proto.Message):
         inline_data (google.ai.generativelanguage_v1beta.types.Blob):
             Inline media bytes.
 
+            This field is a member of `oneof`_ ``data``.
             This field is a member of `oneof`_ ``data``.
         function_call (google.ai.generativelanguage_v1beta.types.FunctionCall):
             A predicted ``FunctionCall`` returned from the model that

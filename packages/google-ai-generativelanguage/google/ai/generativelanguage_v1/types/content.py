@@ -77,7 +77,6 @@ class Part(proto.Message):
     members.
 
     .. _oneof: https://proto-plus-python.readthedocs.io/en/stable/fields.html#oneofs-mutually-exclusive-fields
-
     Attributes:
         text (str):
             Inline text.
