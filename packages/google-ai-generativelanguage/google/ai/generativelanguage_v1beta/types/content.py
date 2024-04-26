@@ -120,10 +120,10 @@ class Part(proto.Message):
         text (str):
             Inline text.
 
-            This field is a member of `oneof`_ ``data``.
         inline_data (google.ai.generativelanguage_v1beta.types.Blob):
             Inline media bytes.
 
+        This field is a member of `oneof`_ ``data``.
             This field is a member of `oneof`_ ``data``.
         function_call (google.ai.generativelanguage_v1beta.types.FunctionCall):
             A predicted ``FunctionCall`` returned from the model that
