@@ -434,6 +434,9 @@ class ProductInputConfig(proto.Message):
             products.
 
             This field is a member of `oneof`_ ``source``.
+        inline_data (str):
+            Data stored inline as a string.
+
         gcs_source (google.cloud.retail_v2beta.types.GcsSource):
             Google Cloud Storage location for the input
             content.
@@ -473,11 +476,11 @@ class UserEventInputConfig(proto.Message):
     Setting any member of the oneof automatically clears all other
     members.
 
-    .. _oneof: https://proto-plus-python.readthedocs.io/en/stable/fields.html#oneofs-mutually-exclusive-fields
-
-    Attributes:
         user_event_inline_source (google.cloud.retail_v2beta.types.UserEventInlineSource):
             Required. The Inline source for the input
+            content for UserEvents.
+
+            This field is a member of `oneof`_ ``source``.
             content for UserEvents.
 
             This field is a member of `oneof`_ ``source``.

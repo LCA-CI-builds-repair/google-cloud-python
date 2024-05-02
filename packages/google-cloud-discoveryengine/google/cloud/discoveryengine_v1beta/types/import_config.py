@@ -213,6 +213,9 @@ class ImportUserEventsRequest(proto.Message):
             UserEvents.
 
             This field is a member of `oneof`_ ``source``.
+        inline_data (str):
+            Data stored inline as a string.
+
         gcs_source (google.cloud.discoveryengine_v1beta.types.GcsSource):
             Cloud Storage location for the input content.
 

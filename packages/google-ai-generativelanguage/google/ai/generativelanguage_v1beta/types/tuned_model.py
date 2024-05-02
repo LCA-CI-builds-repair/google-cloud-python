@@ -322,6 +322,8 @@ class Dataset(proto.Message):
             Optional. Inline examples.
 
             This field is a member of `oneof`_ ``dataset``.
+        inline_data (str):
+            Data stored inline as a string.
     """
 
     examples: "TuningExamples" = proto.Field(

@@ -391,6 +391,9 @@ class ImportAdaptiveMtFileRequest(proto.Message):
         parent (str):
             Required. The resource name of the file, in form of
             ``projects/{project-number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset}``
+        inline_data (str):
+            Data stored inline as a string.
+
         file_input_source (google.cloud.translate_v3.types.FileInputSource):
             Inline file source.
 

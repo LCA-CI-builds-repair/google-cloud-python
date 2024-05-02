@@ -121,6 +121,9 @@ class Part(proto.Message):
             Inline text.
 
             This field is a member of `oneof`_ ``data``.
+        inline_data (str):
+            Data stored inline as a string.
+
         inline_data (google.ai.generativelanguage_v1beta.types.Blob):
             Inline media bytes.
 
