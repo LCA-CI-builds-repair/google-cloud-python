@@ -420,17 +420,16 @@ class ContinuousTestResult(proto.Message):
         environment.
 
         Values:
-            AGGREGATED_TEST_RESULT_UNSPECIFIED (0):
+            AGGREGATED_TEST_RESULT_UNSPECIFIED = 0
                 Not specified. Should never be used.
-            PASSED (1):
+            PASSED = 1
                 All the tests passed.
-            FAILED (2):
+            FAILED = 2
                 At least one test did not pass.
         """
         AGGREGATED_TEST_RESULT_UNSPECIFIED = 0
         PASSED = 1
         FAILED = 2
-
     name: str = proto.Field(
         proto.STRING,
         number=1,

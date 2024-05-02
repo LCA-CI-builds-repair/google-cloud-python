@@ -750,11 +750,12 @@ class ListVehiclesRequest(proto.Message):
                )
 
             Restricts the response to vehicles that match all the
-            attributes in a ``VehicleAttributeList``. Within each list,
+            specified attributes in a ``VehicleAttributeList``. Within each list,
             a vehicle must match all of the attributes. This field is a
             conjunction/AND operation in each ``VehicleAttributeList``
             and inclusive disjunction/OR operation across the collection
             of ``VehicleAttributeList``. Each repeated string should be
+            of the format "key1:value1|key2:value2|key3:value3".
             of the format "key1:value1|key2:value2|key3:value3".
         vehicle_state (google.maps.fleetengine_v1.types.VehicleState):
             Restricts the response to vehicles that have
@@ -783,7 +784,6 @@ class ListVehiclesRequest(proto.Message):
             is 50.
 
             Also, all attributes are stored as strings, so the only
-            supported comparisons against attributes are string
             comparisons. In order to compare against number or boolean
             values, the values must be explicitly quoted to be treated
             as strings (for example, ``attributes.<key> = "10"`` or
@@ -792,6 +792,7 @@ class ListVehiclesRequest(proto.Message):
             Optional. A filter that limits the vehicles
             returned to those whose last known location was
             in the rectangular area defined by the viewport.
+    """
     """
 
     header: mf_header.RequestHeader = proto.Field(
@@ -860,11 +861,6 @@ class ListVehiclesRequest(proto.Message):
     )
     viewport: ggt_viewport.Viewport = proto.Field(
         proto.MESSAGE,
-        number=17,
-        message=ggt_viewport.Viewport,
-    )
-
-
 class ListVehiclesResponse(proto.Message):
     r"""``ListVehicles`` response message.
 
@@ -880,6 +876,7 @@ class ListVehiclesResponse(proto.Message):
         total_size (int):
             Required. Total number of vehicles matching
             the request criteria across all pages.
+    """
     """
 
     @property
@@ -940,6 +937,9 @@ class VehicleMatch(proto.Message):
             and this vehicle has an active trip, ``vehicle_pickup_eta``
             includes the time required to complete the current active
             trip.
+            and this vehicle has an active trip, ``vehicle_pickup_eta``
+            includes the time required to complete the current active
+            trip.
         vehicle_pickup_distance_meters (google.protobuf.wrappers_pb2.Int32Value):
             The distance from the Vehicle's current
             location to the pickup point specified in the
@@ -967,10 +967,7 @@ class VehicleMatch(proto.Message):
             The vehicle's driving distance (in meters) from the pickup
             point to the drop off point specified in the request. The
             distance is only between the two points and does not include
-            the vehicle location or any other points that must be
-            visited before the vehicle visits either the pickup point or
-            dropoff point. The value will only be populated when a
-            ``dropoff_point`` is specified in the request. An empty
+            the vehicle location or any other points that must be specified.
             value indicates a failure in calculating the distance from
             the pickup to drop off point specified in the request.
         trip_type (google.maps.fleetengine_v1.types.TripType):
