@@ -122,6 +122,7 @@ class Part(proto.Message):
 
             This field is a member of `oneof`_ ``data``.
         inline_data (google.ai.generativelanguage_v1beta.types.Blob):
+            This field is a member of `oneof`_ ``data``.
             Inline media bytes.
 
             This field is a member of `oneof`_ ``data``.
