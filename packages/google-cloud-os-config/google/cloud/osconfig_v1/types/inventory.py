@@ -295,8 +295,7 @@ class Inventory(proto.Message):
                 Details of a Windows Quick Fix engineering
                 package. See
                 https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-quickfixengineering
-                for info in Windows Quick Fix Engineering.
-
+                for info on Windows Quick Fix Engineering.
                 This field is a member of `oneof`_ ``details``.
             cos_package (google.cloud.osconfig_v1.types.Inventory.VersionedPackage):
                 Details of a COS package.
