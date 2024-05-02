@@ -119,9 +119,9 @@ class Part(proto.Message):
     Attributes:
         text (str):
             Inline text.
-
+            
             This field is a member of `oneof`_ ``data``.
-        inline_data (google.ai.generativelanguage_v1beta.types.Blob):
+        inline_data (google.ai.generativelanguage_v1beta.types.Blob): # Add closing parenthesis ")" here
             Inline media bytes.
 
             This field is a member of `oneof`_ ``data``.
