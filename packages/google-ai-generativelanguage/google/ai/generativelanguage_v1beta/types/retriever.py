@@ -86,7 +86,7 @@ class Document(proto.Message):
     have a maximum of 10,000 ``Document``\ s.
 
     Attributes:
-        name (str):
+        name (str):  # Fix unclosed markdown emphasis.
             Immutable. Identifier. The ``Document`` resource name. The
             ID (name excluding the "corpora/*/documents/" prefix) can
             contain up to 40 characters that are lowercase alphanumeric
