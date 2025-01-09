@@ -88,18 +88,16 @@ class Document(proto.Message):
     Attributes:
         name (str):
             Immutable. Identifier. The ``Document`` resource name. The
-            ID (name excluding the "corpora/*/documents/" prefix) can
+            ID (name excluding the ``corpora/*/documents/`` prefix) can
             contain up to 40 characters that are lowercase alphanumeric
-            or dashes (-). The ID cannot start or end with a dash. If
-            the name is empty on create, a unique name will be derived
+            or dashes (``-``). The ID cannot start or end with a dash.
+            If the name is empty on create, a unique name will be derived
             from ``display_name`` along with a 12 character random
-            suffix. Example:
-            ``corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c``
+            suffix. Example: ``corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c``.
         display_name (str):
             Optional. The human-readable display name for the
             ``Document``. The display name must be no more than 512
-            characters in length, including spaces. Example: "Semantic
-            Retriever Documentation".
+            characters in length, including spaces. Example: "Semantic Retriever Documentation".
         custom_metadata (MutableSequence[google.ai.generativelanguage_v1beta.types.CustomMetadata]):
             Optional. User provided custom metadata stored as key-value
             pairs used for querying. A ``Document`` can have a maximum
