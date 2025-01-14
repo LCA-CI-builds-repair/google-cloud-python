@@ -85,7 +85,7 @@ class Document(proto.Message):
     r"""A ``Document`` is a collection of ``Chunk``\ s. A ``Corpus`` can
     have a maximum of 10,000 ``Document``\ s.
 
-    Attributes:
+    Attributes: 
         name (str):
             Immutable. Identifier. The ``Document`` resource name. The
             ID (name excluding the "corpora/*/documents/" prefix) can
@@ -96,7 +96,7 @@ class Document(proto.Message):
             suffix. Example:
             ``corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c``
         display_name (str):
-            Optional. The human-readable display name for the
+            Optional. The human-readable display name for the 
             ``Document``. The display name must be no more than 512
             characters in length, including spaces. Example: "Semantic
             Retriever Documentation".
