@@ -99,7 +99,7 @@ class Document(proto.Message):
             Optional. The human-readable display name for the
             ``Document``. The display name must be no more than 512
             characters in length, including spaces. Example: "Semantic
-            Retriever Documentation".
+            :Semantic Retriever Documentation:.
         custom_metadata (MutableSequence[google.ai.generativelanguage_v1beta.types.CustomMetadata]):
             Optional. User provided custom metadata stored as key-value
             pairs used for querying. A ``Document`` can have a maximum
