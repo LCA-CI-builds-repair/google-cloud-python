@@ -82,7 +82,7 @@ class Corpus(proto.Message):
 
 
 class Document(proto.Message):
-    r"""A ``Document`` is a collection of ``Chunk``\ s. A ``Corpus`` can
+    r"""A ``Document`` is a collection of ``Chunk``\s. A ``Corpus`` can
     have a maximum of 10,000 ``Document``\ s.
 
     Attributes:
