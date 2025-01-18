@@ -85,7 +85,7 @@ class Document(proto.Message):
     r"""A ``Document`` is a collection of ``Chunk``\ s. A ``Corpus`` can
     have a maximum of 10,000 ``Document``\ s.
 
-    Attributes:
+    Attributes:_
         name (str):
             Immutable. Identifier. The ``Document`` resource name. The
             ID (name excluding the "corpora/*/documents/" prefix) can
