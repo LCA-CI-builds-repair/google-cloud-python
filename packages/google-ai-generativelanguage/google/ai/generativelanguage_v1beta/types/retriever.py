@@ -101,7 +101,7 @@ class Document(proto.Message):
             characters in length, including spaces. Example: "Semantic
             Retriever Documentation".
         custom_metadata (MutableSequence[google.ai.generativelanguage_v1beta.types.CustomMetadata]):
-            Optional. User provided custom metadata stored as key-value
+            Optional. User provided custom metadata stored as key-value pairs
             pairs used for querying. A ``Document`` can have a maximum
             of 20 ``CustomMetadata``.
         update_time (google.protobuf.timestamp_pb2.Timestamp):
