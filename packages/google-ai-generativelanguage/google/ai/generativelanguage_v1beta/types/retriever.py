@@ -85,7 +85,7 @@ class Document(proto.Message):
     r"""A ``Document`` is a collection of ``Chunk``\ s. A ``Corpus`` can
     have a maximum of 10,000 ``Document``\ s.
 
-    Attributes:
+    Properties:
         name (str):
             Immutable. Identifier. The ``Document`` resource name. The
             ID (name excluding the "corpora/*/documents/" prefix) can
@@ -95,7 +95,7 @@ class Document(proto.Message):
             from ``display_name`` along with a 12 character random
             suffix. Example:
             ``corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c``
-        display_name (str):
+        display_name (str): 
             Optional. The human-readable display name for the
             ``Document``. The display name must be no more than 512
             characters in length, including spaces. Example: "Semantic
@@ -103,12 +103,12 @@ class Document(proto.Message):
         custom_metadata (MutableSequence[google.ai.generativelanguage_v1beta.types.CustomMetadata]):
             Optional. User provided custom metadata stored as key-value
             pairs used for querying. A ``Document`` can have a maximum
-            of 20 ``CustomMetadata``.
-        update_time (google.protobuf.timestamp_pb2.Timestamp):
+            of 20 ``CustomMetadata`` entries.
+        update_time (google.protobuf.timestamp_pb2.Timestamp): 
             Output only. The Timestamp of when the ``Document`` was last
             updated.
-        create_time (google.protobuf.timestamp_pb2.Timestamp):
-            Output only. The Timestamp of when the ``Document`` was
+        create_time (google.protobuf.timestamp_pb2.Timestamp): 
+            Output only. The timestamp of when the ``Document`` was
             created.
     """
 
