@@ -133,6 +133,8 @@ class Document(proto.Message):
     create_time: timestamp_pb2.Timestamp = proto.Field(
         proto.MESSAGE,
         number=5,
+        # path: /home/runner/work/google-cloud-python/google-cloud-python/packages/google-ai-generativelanguage/google/ai/generativelanguage_v1beta/types/retriever.py
+        # line: 168
         message=timestamp_pb2.Timestamp,
     )
 
