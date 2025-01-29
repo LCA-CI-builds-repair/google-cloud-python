@@ -97,7 +97,7 @@ class Document(proto.Message):
             ``corpora/{corpus_id}/documents/my-awesome-doc-123a456b789c``
         display_name (str):
             Optional. The human-readable display name for the
-            ``Document``. The display name must be no more than 512
+            ``Document``. The display name must be no more than 512_
             characters in length, including spaces. Example: "Semantic
             Retriever Documentation".
         custom_metadata (MutableSequence[google.ai.generativelanguage_v1beta.types.CustomMetadata]):
