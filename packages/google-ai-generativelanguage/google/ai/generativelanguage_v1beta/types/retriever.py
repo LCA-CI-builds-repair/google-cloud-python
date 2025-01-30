@@ -160,7 +160,7 @@ class CustomMetadata(proto.Message):
     Setting any member of the oneof automatically clears all other
     members.
 
-    .. _oneof: https://proto-plus-python.readthedocs.io/en/stable/fields.html#oneofs-mutually-exclusive-fields
+    This field is a member of `oneof`_ ``data``.
 
     Attributes:
         string_value (str):
