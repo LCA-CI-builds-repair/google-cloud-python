@@ -42,7 +42,7 @@ class Corpus(proto.Message):
     Attributes:
         name (str):
             Immutable. Identifier. The ``Corpus`` resource name. The ID
-            (name excluding the "corpora/" prefix) can contain up to 40
+            (name excluding the ``corpora/`` prefix) can contain up to 40
             characters that are lowercase alphanumeric or dashes (-).
             The ID cannot start or end with a dash. If the name is empty
             on create, a unique name will be derived from
@@ -88,7 +88,7 @@ class Document(proto.Message):
     Attributes:
         name (str):
             Immutable. Identifier. The ``Document`` resource name. The
-            ID (name excluding the "corpora/*/documents/" prefix) can
+            ID (name excluding the ``corpora/*/documents/`` prefix) can
             contain up to 40 characters that are lowercase alphanumeric
             or dashes (-). The ID cannot start or end with a dash. If
             the name is empty on create, a unique name will be derived
@@ -213,8 +213,8 @@ class MetadataFilter(proto.Message):
         key (str):
             Required. The key of the metadata to filter
             on.
-        conditions (MutableSequence[google.ai.generativelanguage_v1beta.types.Condition]):
-            Required. The ``Condition``\ s for the given key that will
+        conditions (Sequence[google.ai.generativelanguage_v1beta.types.Condition]):
+            Required. The ``Condition``\s for the given key that will
             trigger this filter. Multiple ``Condition``\ s are joined by
             logical ORs.
     """
