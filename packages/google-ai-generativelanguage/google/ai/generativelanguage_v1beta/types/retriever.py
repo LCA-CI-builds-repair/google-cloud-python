@@ -64,7 +64,7 @@ class Corpus(proto.Message):
     name: str = proto.Field(
         proto.STRING,
         number=1,
-    )
+     )
     display_name: str = proto.Field(
         proto.STRING,
         number=2,
@@ -146,7 +146,7 @@ class StringList(proto.Message):
             The string values of the metadata to store.
     """
 
-    values: MutableSequence[str] = proto.RepeatedField(
+    values: MutableSequence\[str\] = proto.RepeatedField(
         proto.STRING,
         number=1,
     )
